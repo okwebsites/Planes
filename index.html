@@ -5,7 +5,8 @@
                 color: black;
                 font-size: 40%;
                 font-family: 'Courier New', Courier, monospace;
-                
+                padding: 0; /* this remove the padding from the html page */
+                margin: 0; /* this remove the padding from the html page */
         
             }
 
@@ -17,29 +18,65 @@
             ul.menu li a:hover {
                 color:gray;
             }
+
+            td.rightArea {
+                background-color: #8b000030;
+                width: 50%;
+            }
+            .menuCard{
+                background-color: aliceblue;
+                width: 45%;
+                padding: 150px 0 150px 0px;
+                vertical-align: middle;
+                text-align: left;
+                border-radius: 5%;
+            }
+
+            .menuCard li {
+                padding: 5px 0 5px 0;
+                text-transform: capitalize;
+            }
+
+            table.table {
+                width: 100%; /* this make the table cover entire page */
+                height: 100%; /* this make the table cover entire page */
+                border: 0;
+                border-spacing: 0; /* this make the table without border */
+            }
+            td.leftArea{
+                background-color:rgb(56, 0, 0 );
+                width: 50%  ;
+            }
+
         </style>
         </header>
     <body>
-        <table width="100%">
+        <table class="table">
             <tr>
-                <td width="40%" bgcolor="gray">
-                    <ul class="menu">
+                <td class="leftArea" align="center">
+                    
+                    <div class="menuCard">
+                        <ul class="menu">
                         <li>
                             <a href="airliners.html">Airliners</a>
                         </li>
                         <li>
-                            <a href="how they fly.html">how they fly</a>
+                            <a href="how they fly.html">How they fly</a>
                         </li>
                         <li>
-                            <a href="history.html">history</a>
+                            <a href="history.html">History</a>
                         </li>
                         <li>
-                            <a href="types.html">types</a>
+                            <a href="types.html">Types</a>
                         </li>
                     </ul>
+                    </div>
                     </td>
-                <td width="60%" bgcolor="gray">
+                <td class="rightArea">
                     
+                </td>
+                <td class="leftArea">
+
                 </td>
             </tr>
         </table>
