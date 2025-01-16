@@ -23,18 +23,19 @@
                 background-color: #8b000030;
                 width: 50%;
             }
-            .menuCard{
+            .menuCard {
                 background-color: aliceblue;
                 width: 45%;
-                padding: 150px 0 150px 0px;
+                padding: 50px;
                 vertical-align: middle;
                 text-align: left;
                 border-radius: 5%;
             }
 
             .menuCard li {
-                padding: 5px 0 5px 0;
+                padding: 15px 0 15px 0;
                 text-transform: capitalize;
+                font-size: 30px;
             }
 
             table.table {
@@ -43,9 +44,26 @@
                 border: 0;
                 border-spacing: 0; /* this make the table without border */
             }
-            td.leftArea{
-                background-color:rgb(56, 0, 0 );
+            td.leftArea {
+                background-color:rgb(134, 83, 83 );
                 width: 50%  ;
+            }
+
+            .ok_logo_container {
+                text-align: center;
+            }
+            .ok_logo_container img {
+                width: 50%;
+                align-items: center;
+            }
+
+            .youtube_video {
+                width: 100%; /* this make the table cover entire page */
+                height: 100%; /* this make the table cover entire page */
+                margin: 0;
+                border: 0;
+                padding: 0;
+                border-spacing: 0;
             }
 
         </style>
@@ -56,6 +74,9 @@
                 <td class="leftArea" align="center">
                     
                     <div class="menuCard">
+                        <div class="ok_logo_container">
+                            <img src="./img/ok_logo.png" alt="ok websites">
+                        </div>
                         <ul class="menu">
                         <li>
                             <a href="airliners.html">Airliners</a>
@@ -73,9 +94,7 @@
                     </div>
                     </td>
                 <td class="rightArea">
-                    
-                </td>
-                <td class="leftArea">
+                    <iframe class="youtube_video" src="https://www.youtube.com/embed/haAM5ViIVTg?si=2yifOJV4zfQpjpSj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
                 </td>
             </tr>
