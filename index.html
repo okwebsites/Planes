@@ -1,103 +1,116 @@
 <html>
-    <header>
-        <style>
-            body {
-                color: black;
-                font-size: 40%;
-                font-family: 'Courier New', Courier, monospace;
-                padding: 0; /* this remove the padding from the html page */
-                margin: 0; /* this remove the padding from the html page */
-        
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            color: black;
+            font-size: 40%;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 0; /* this remove the padding from the html page */
+            margin: 0; /* this remove the padding from the html page */
+    height: 100vh;
+        }
 
-            ul.menu li a {
-                color:black;
-                text-decoration: none;
-            }
+        ul.menu li a {
+            color:black;
+            text-decoration: none;
+        }
 
-            ul.menu li a:hover {
-                color:gray;
-            }
+        ul.menu li a:hover {
+            color:gray;
+        }
 
-            td.rightArea {
-                background-color: #8b000030;
-                width: 50%;
-            }
-            .menuCard {
-                background-color: aliceblue;
-                width: 45%;
-                padding: 50px;
-                vertical-align: middle;
-                text-align: left;
-                border-radius: 5%;
-            }
+        td.rightArea {
+            background-color: #8b000030;
+            width: 50%;
+        }
+        .menuCard {
+            background-color: aliceblue;
+            width: 45%;
+            padding: 50px;
+            vertical-align: middle;
+            text-align: left;
+            border-radius: 5%;
+        }
 
-            .menuCard li {
-                padding: 15px 0 15px 0;
-                text-transform: capitalize;
-                font-size: 30px;
-            }
+        .menuCard li {
+            padding: 15px 0 15px 0;
+            text-transform: capitalize;
+            font-size: 30px;
+        }
 
-            table.table {
-                width: 100%; /* this make the table cover entire page */
-                height: 100%; /* this make the table cover entire page */
-                border: 0;
-                border-spacing: 0; /* this make the table without border */
-            }
-            td.leftArea {
-                background-color:rgb(134, 83, 83 );
-                width: 50%  ;
-            }
+        table.table {
+            width: 100%; /* this make the table cover entire page */
+            height: 100%; /* this make the table cover entire page */
+            border: 0;
+            border-spacing: 0; /* this make the table without border */
+        }
+        td.leftArea {
+            background-color:rgba(134, 83, 83, 0.95);
+            width: 50%  ;
+        }
 
-            .ok_logo_container {
-                text-align: center;
-            }
-            .ok_logo_container img {
-                width: 50%;
-                align-items: center;
-            }
+        .ok_logo_container {
+            text-align: center;
+        }
+        .ok_logo_container img {
+            width: 50%;
+            align-items: center;
+        }
 
-            .youtube_video {
-                width: 100%; /* this make the table cover entire page */
-                height: 100%; /* this make the table cover entire page */
-                margin: 0;
-                border: 0;
-                padding: 0;
-                border-spacing: 0;
-            }
+        #myVideo {
+            position: absolute;
+            top: 50%; 
+            left: 50%;
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+            min-width: 100%; 
+            min-height: 100%; 
+            width: auto; 
+            height: auto;
+            z-index: -1000; 
+            overflow: hidden;
+        }
 
-        </style>
-        </header>
-    <body>
-        <table class="table">
-            <tr>
-                <td class="leftArea" align="center">
-                    
-                    <div class="menuCard">
-                        <div class="ok_logo_container">
-                            <img src="./img/ok_logo.png" alt="ok websites">
-                        </div>
-                        <ul class="menu">
-                        <li>
-                            <a href="airliners.html">Airliners</a>
-                        </li>
-                        <li>
-                            <a href="how they fly.html">How they fly</a>
-                        </li>
-                        <li>
-                            <a href="history.html">History</a>
-                        </li>
-                        <li>
-                            <a href="types.html">Types</a>
-                        </li>
-                    </ul>
+    </style>
+    <link rel="icon" href="/img/icon.png" type="image/x-icon">
+
+</head>
+<body>
+    <table class="table">
+        <tr>
+            <td class="leftArea" align="center">
+                
+                <div class="menuCard">
+                    <div class="ok_logo_container">
+                        <img src="./img/ok_logo.png" alt="ok websites">
                     </div>
-                    </td>
-                <td class="rightArea">
-                    <iframe class="youtube_video" src="https://www.youtube.com/embed/haAM5ViIVTg?si=2yifOJV4zfQpjpSj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+                    <ul class="menu">
+                    <li>
+                        <a href="airliners.html">Airliners</a>
+                    </li>
+                    <li>
+                        <a href="how they fly.html">How they fly</a>
+                    </li>
+                    <li>
+                        <a href="history.html">History</a>
+                    </li>
+                    <li>
+                        <a href="types.html">Types</a>
+                    </li>
+                </ul>
+                </div>
                 </td>
-            </tr>
-        </table>
-    </body>
+            <td class="rightArea">
+
+                <!-- The video -->
+                <video autoplay muted loop id="myVideo">
+                    <source src="./videos/planes.mp4" type="video/mp4">
+                </video>
+            </td>
+        </tr>
+    </table>
+</body>
 </html>
