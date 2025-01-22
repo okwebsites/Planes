@@ -10,6 +10,27 @@
             background-color: #865353;
         }
 
+        .image_container {
+            position: relative;
+            width: 100%;
+            margin: auto;
+        }
+
+        .image_container .imagetext {
+            position: absolute;
+            bottom: 150px;
+            opacity: 0;
+            text-align: center;
+            width: 100%;
+            color: azure;
+            font-size: 50px;
+            
+        }
+
+        .image_container:hover .imagetext {
+            opacity: 1;
+        }
+
         .icon {
             width: 100%;
             border-radius: 7%;
@@ -62,6 +83,7 @@
         span {
             color: white;
             font-size: 24px !important;
+            opacity: 0;
         }
     </style>
 </head>
@@ -91,27 +113,29 @@
     <table class="airliners_table">
         <tr>
             <td>
-                <img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airlines/ryanair.jpg?1554032424"
-                    class="icon">
-                <span>Ryanair</span>
+                <div class="image_container">
+                    <img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airlines/ryanair.jpg?1554032424"
+                        class="icon">
+                    <div class="imagetext">Ryanair</div>
+                </div>
             </td>
             <td>
                 <img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airlines/air-serbia.jpg?1554285341"
                     class="icon">
-                    
-                <span>Ryanair</span>
+
+                <span>air-serbia</span>
             </td>
             <td>
                 <img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airlines/aegean-airlines.jpg?1554032448"
                     class="icon">
 
-                <span>Ryanair</span>
+                <span>aegean-airlines</span>
             </td>
             <td>
                 <img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airlines/austrian-airlines.jpg?1554032440"
                     class="icon">
 
-                <span>Ryanair</span>
+                <span>austrian-airlines</span>
             </td>
         </tr>
         <tr>
@@ -119,110 +143,125 @@
                 <img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airlines/atlasglobal.jpg?1554032436"
                     class="icon">
 
-                <span>Ryanair</span>
+                <span>atlasglobal</span>
             </td>
             <td>
                 <img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airlines/transavia.jpg?1554032418"
                     class="icon">
 
-                <span>Ryanair</span>
+                <span>transavia</span>
             </td>
             <td>
                 <img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airlines/croatia-airlines.jpg?1554032430"
                     class="icon">
 
-                <span>Ryanair</span>
+                <span>croatia-airlines</span>
             </td>
             <td>
                 <img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airlines/finnair.jpg?1554032434"
                     class="icon">
 
-                <span>Ryanair</span>
+                <span>finnair</span>
             </td>
         </tr>
         <tr>
             <td><img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airplanes/airbus-a350.jpg?1554629266"
                     class="icon" alt="Airbus A350">
-                
-                    <span>Ryanair</span>
-                </td>
+
+                <span>airbus-a350</span>
+            </td>
             <td><img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airplanes/airbus-a380.jpg?1554629264"
                     class="icon" alt="Airbus A380">
-                    
-                <span>Ryanair</span>
-                </td>
+
+                <span>airbus-a380</span>
+            </td>
             <td><img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airplanes/comac-c919.jpg?1555646538"
                     class="icon" alt="Comac C919">
-                
-                    <span>Ryanair</span>
-                </td>
+
+                <span>comac-c919</span>
+            </td>
             <td><img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airplanes/airbus-a319-a320-a321-neo.jpg?1566542948"
                     class="icon" alt="Airbus A319/A320/A321 Neo">
-                
-                    <span>Ryanair</span>
-                </td>
+
+                <span>a319</span>
+            </td>
         </tr>
         <tr>
             <td><img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airplanes/airbus-a340.jpg?1555412319"
                     class="icon" alt="Airbus A340">
 
-                <span>Ryanair</span>
+                <span>airbus-a340</span>
 
-                </td>
+            </td>
             <td><img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airplanes/boeing-747-400.jpg?1554629268"
                     class="icon" alt="Boeing 747-400">
-                
-                    <span>Ryanair</span></td>
+
+                <span>boeing-747-8</span>
+            </td>
             <td><img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airplanes/airbus-a318-319-320-321-classic.jpg?1566542948"
                     class="icon" alt="Airbus A318/319/320/321 Classic">
-                    <span>Ryanair</span></td>
+                <span>a320</span>
+            </td>
             <td><img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airplanes/boeing-777.jpg?1554629269"
                     class="icon" alt="Boeing 777">
-                    <span>Ryanair</span></td>
+                <span>boeing-777</span>
+            </td>
         </tr>
         <tr>
             <td><img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airlines/lot-polish.jpg?1554032430"
                     class="icon" alt="Boeing 737 MAX (7/8/9/10)">
-                    <span>Ryanair</span></td>
+                <span>lot-polish</span>
+            </td>
 
             <td><img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airplanes/boeing-767.jpg?1554629247"
                     class="icon" alt="Boeing 767">
-                    <span>Ryanair</span></td>
+                <span>boeing-767</span>
+            </td>
             <td><img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airplanes/boeing-717-md-95.jpg?1555418017"
                     class="icon" alt="Boeing 717 (MD-95)">
-                    <span>Ryanair</span></td>
+                <span>boeing-717-md-95</span>
+            </td>
             <td><img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airplanes/boeing-747-8.jpg?1554629293"
                     class="icon" alt="Boeing 747-8">
-                    <span>Ryanair</span></td>
+                <span>boeing-747-400</span>
+            </td>
         </tr>
         <tr>
             <td><img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airplanes/boeing-737-classic-300-400-500.jpg?1555151058"
                     class="icon" alt="Boeing 737 Classic (300/400/500)">
-                    <span>Ryanair</span></td>
+                <span>boeing-737-classic-300-400-500</span>
+            </td>
             <td><img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airplanes/boeing-737-next-gen-600-700-800-900.jpg?1555151060"
                     class="icon" alt="Boeing 737 Next Gen (600/700/800/900)">
-                    <span>Ryanair</span></td>
+                <span>boeing-737-next-gen-600-700-800-900</span>
+            </td>
             <td><img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airplanes/airbus-a300-beluga.jpg?1554629264"
                     class="icon" alt="Airbus A300 Beluga">
-                    <span>Ryanair</span></td>
+                <span>airbus-a300-beluga</span>
+            </td>
             <td><img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airplanes/embraer-170-190.jpg?1554629227"
                     class="icon" alt="Embraer 170/190">
-                    <span>Ryanair</span></td>
+                <span>embraer-170-190</span>
+            </td>
         </tr>
         <tr>
             <td><img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airlines/luxair.jpg?1554040035"
                     class="icon" alt="Boeing MD80/MD90">
-                    <span>Ryanair</span></td>
+                <span>luxair</span>
+            </td>
             <td><img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airlines/icelandair.jpg?1554032424"
                     class="icon" alt="Average ship">
-                    <span>Ryanair</span></td>
+                <span>icelandair</span>
+            </td>
 
             <td><img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airplanes/boeing-md80-md90.jpg?1554629259"
                     class="icon" alt="Boeing MD80/MD90">
-                    <span>Ryanair</span></td>
+                <span>boeing-md80-md90</span>
+            </td>
             <td><img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airplanes/boeing-737-max-7-8-9-10.jpg?1555438588"
                     class="icon" alt="Boeing 737 MAX (7/8/9/10)">
-                    <span>Ryanair</span></td>
+                <span>boeing-737-max-7-8-9-10</span>
+            </td>
         </tr>
     </table>
 </body>
