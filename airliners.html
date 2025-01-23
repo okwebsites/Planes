@@ -10,34 +10,12 @@
             background-color: #865353;
         }
 
-        .image_container {
-            position: relative;
-            width: 100%;
-            margin: auto;
-        }
-
-        .image_container .imagetext {
-            position: absolute;
-            bottom: 150px;
-            opacity: 0;
-            text-align: center;
-            width: 100%;
-            color: azure;
-            font-size: 50px;
-            
-        }
-
-        .image_container:hover .imagetext {
-            opacity: 1;
-        }
-
         .icon {
             width: 100%;
             border-radius: 7%;
             height: 300px;
             object-fit: cover;
             border: #666 solid 5px;
-            border
         }
 
         .icon:hover {
@@ -83,7 +61,6 @@
         span {
             color: white;
             font-size: 24px !important;
-            opacity: 0;
         }
     </style>
 </head>
@@ -113,11 +90,9 @@
     <table class="airliners_table">
         <tr>
             <td>
-                <div class="image_container">
-                    <img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airlines/ryanair.jpg?1554032424"
-                        class="icon">
-                    <div class="imagetext">Ryanair</div>
-                </div>
+                <img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airlines/ryanair.jpg?1554032424"
+                    class="icon">
+                <span>Ryanair</span>
             </td>
             <td>
                 <img src="https://airlinelist.com/cdn-cgi/image/format=auto,fit=cover,width=600/assets/airlines/air-serbia.jpg?1554285341"
